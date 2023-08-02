@@ -7,5 +7,7 @@ Usage
 1. Run the script.
 2.  When prompted, enter the path of the folder you want to monitor.
 3. Next, you will be asked to either Collect New Baseline or Begin monitoring files with saved Baseline. Here are the options:
+
   A) Collect New Baseline: This will delete the existing baseline file if it exists and calculate the hashes of all files in the target directory, storing them in the baseline.txt file.
+  
   B) Begin monitoring files with saved Baseline: This option will start continuously monitoring the target folder. It will notify you of any changes in the files within the directory. The changes could be in the form of the creation of a new file, changes to an existing file, or deletion of a file.
