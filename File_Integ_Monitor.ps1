@@ -64,7 +64,7 @@ if ($response -eq "A".ToUpper()){
         $hash = Calculate-File-Hash $f.FullName 
         "$($hash.Path)|$($hash.Hash)" | Out-File -FilePath .\baseline.txt -Append
     }
-    Move-Item -Path .\baseline.txt -Destination C:\Users\viraj\Desktop\FIMTest
+    Move-Item -Path .\baseline.txt -Destination C:\Users\~\Desktop\FIMTest
 }
 elseif ($response -eq "B".ToUpper()){
     
@@ -72,7 +72,7 @@ elseif ($response -eq "B".ToUpper()){
     $fileHashDictionary = @{}
 
     #Load file|hash from baseline.txt and store them in a dictionary 
-    $filePathsAndHashes = Get-Content C:\Users\viraj\Desktop\FIMTest\baseline.txt
+    $filePathsAndHashes = Get-Content C:\Users\~\Desktop\FIMTest\baseline.txt
     
     foreach ($f in $filePathsAndHashes) {
         $fileHashDictionary.add($f.Split("|")[0],$f.Split("|")[1])
