@@ -30,8 +30,7 @@ A PowerShell-based File Integrity Monitor that performs baseline creation and co
 ## File layout (single-file script)
 
 ```
-Advanced-FIM/
-└── fim.ps1              # Main script (contains configuration, functions, and menu)
+fim.ps1              # Main script (contains configuration, functions, and menu)
 ```
 
 > The distribution you provided is implemented as a single PowerShell script that contains configuration, helper functions, baseline creation, monitoring loop, and an interactive menu.
